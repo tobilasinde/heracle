@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="date"></p>
+<p id="time"></p>
+<script>
+var currentDate = new Date();
+var hour = currentDate.getHours();
+var min = currentDate.getMinutes();
+var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursdäy", "Friday", "Saturday",];
+var date = currentDate.getDate();
+var month = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var year = currentDate.getFullYear();
+var fulldate = day[currentDate.getDay()] + ", " + date + "th " + month[currentDate.getMonth()] + ", " + year ;
+var fulltime = hour + ":" + min
+document.getElementById("date").innerHTML = fulldate;
+document.getElementById("time").innerHTML = fulltime;
+</script>
+</body>
+</html>

@@ -1,20 +1,8 @@
 <!DOCTYPE html>
 <html>
 <body>
-<p id="date"></p>
-<p id="time"></p>
-<script>
-var currentDate = new Date();
-var hour = currentDate.getHours();
-var min = currentDate.getMinutes();
-var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursdäy", "Friday", "Saturday",];
-var date = currentDate.getDate();
-var month = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-var year = currentDate.getFullYear();
-var fulldate = day[currentDate.getDay()] + ", " + date + "th " + month[currentDate.getMonth()] + ", " + year ;
-var fulltime = hour + ":" + min
-document.getElementById("date").innerHTML = fulldate;
-document.getElementById("time").innerHTML = fulltime;
-</script>
+<button type="button" onclick="getDate()" id="Contact">Contact Me</button>
+<button type="button" onclick="getTimeStamp()" id="Contact">Contact Me</button>
+<script type="text/javascript" src="timestamp.js"></script>
 </body>
 </html>
